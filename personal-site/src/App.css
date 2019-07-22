@@ -1,33 +1,33 @@
-.App {
-  text-align: center;
+Body {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2em;
+  background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
+  background-size: 40em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center; */
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Navbar {
+  background-color: rgba(68, 68, 68, 0);
+  height: 65px;
+  color: black;
+  padding-right: 5%;
+  display: flex !important;
+  flex-direction: row !important;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.Nav-options {
+  justify-content: space-between;
+}
+
+.Item {
+  margin-left: .7%;
+  margin-right: .7%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Logo {
+  padding-left: 1%;
 }
