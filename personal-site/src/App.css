@@ -2,10 +2,10 @@ Body {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 2em;
   background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
-  background-size: 40em;
-  background-repeat: no-repeat;
+  background-size: 43em;
+  background-repeat: repeat-y;
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position: center center;
 }
 .Navbar {
   background-color: rgba(68, 68, 68, 0);
@@ -25,9 +25,21 @@ Body {
 .Item {
   margin-left: .7%;
   margin-right: .7%;
+  padding: 0 1% 1% 1%;
   color: white;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.Item:hover {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  background-color: white;
 }
 
 .Logo {
   padding-left: 1%;
+  color: white;
 }

@@ -8,20 +8,20 @@ function Navbar() {
                 VM logo
             </span>
             <div className="Nav-options">
-                <span className="Item">
-                    Home
+                <span>
+                    <a className="Item" href="">Home</a>  
                 </span>
-                <span className="Item">
-                    Skills
+                <span>
+                    <a className="Item" href="">Skills</a>
                 </span>
-                <span className="Item">
-                    Projects
+                <span>
+                    <a className="Item" href="">Projects</a>
                 </span>
-                <span className="Item">
-                    Resumé
+                <span>
+                    <a className="Item" href="">Resumé</a>
                 </span>
-                <span className="Item">
-                    Contact
+                <span>
+                    <a className="Item" href="">Contact</a>
                 </span>
             </div>
         </div>
