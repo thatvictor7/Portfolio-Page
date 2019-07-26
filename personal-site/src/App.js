@@ -1,17 +1,18 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
-import {
-  // Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Collapse
-} from "shards-react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "shards-ui/dist/css/shards.min.css"
+// import {
+//   // Navbar,
+//   NavbarToggler,
+//   NavbarBrand,
+//   Nav,
+//   NavItem,
+//   NavLink,
+//   Collapse
+// } from "shards-react";
 import Navbar from './components/Navbar.jsx'
-// import './App.css';
+import Projects from './components/Projects.jsx'
+import Skills from './components/Skills.jsx'
 import './App.css'
 
 
@@ -22,8 +23,14 @@ class App extends React.Component {
 
   
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className="page">
+      <div className="parallax">
+        <Navbar></Navbar>
+        
+      </div>
+      <Projects></Projects>
+      {/* <div className="test"></div> */}
+      <Skills></Skills>
     </div>
   );
   }

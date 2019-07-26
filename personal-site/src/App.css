@@ -1,12 +1,26 @@
 Body {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 2em;
-  background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
+  /* background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
   background-size: 43em;
   background-repeat: repeat-y;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center center; */
 }
+.parallax {
+  /* The image used */
+  background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .Navbar {
   background-color: rgba(68, 68, 68, 0);
   height: 65px;
@@ -16,6 +30,10 @@ Body {
   flex-direction: row !important;
   align-items: center;
   justify-content: space-between;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index:1;
 }
 
 .Nav-options {
@@ -34,12 +52,64 @@ Body {
 }
 
 .Item:hover {
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  
   text-decoration: none;
-  background-color: white;
+  background-color: rgba(248, 248, 248, 0.329);
 }
 
 .Logo {
   padding-left: 1%;
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-between; */
+  /* flex-grow: 2; */
+}
+
+.image-side {
+  display: flex;
+  height: 500px;
+  background-color: blue;
+  width: 100%;
+  /* margin-right: -13%; */
+  align-items: center;
+  justify-content: center;
+  /* flex-grow: 2; */
+}
+
+.description-side {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  /* margin-left: -12.5%; */
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+}
+
+.carousel-container {
+  background-color: rgb(255, 255, 255);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.carousel {
+  /* display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; */
+}
+
+.test {
+  background-color: black;
+  height: 300px;
 }
