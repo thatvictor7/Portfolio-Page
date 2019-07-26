@@ -11,6 +11,7 @@ import React from 'react';
 //   Collapse
 // } from "shards-react";
 import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
 import './App.css'
@@ -28,9 +29,11 @@ class App extends React.Component {
         <Navbar></Navbar>
         
       </div>
+      {/* <div className="overlay"></div> */}
+      <About></About>
+      <Skills></Skills>
       <Projects></Projects>
       {/* <div className="test"></div> */}
-      <Skills></Skills>
     </div>
   );
   }

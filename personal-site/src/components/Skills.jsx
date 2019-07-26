@@ -6,10 +6,10 @@ function Skills(){
         // <div>
         <Container className="test">
             <Row className="show-grid">
-                <Col md={6} mdPush={6}>
+                <Col md={6} >
                     <code>{'<Col md={6} mdPush={6} />'}</code>
                 </Col>
-                <Col md={6} mdPull={6}>
+                <Col md={6} >
                     <code>{'<Col md={6} mdPull={6} />'}</code>
                 </Col>
             </Row>
