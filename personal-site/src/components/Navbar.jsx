@@ -5,14 +5,14 @@ function Navbar() {
     return(
         <div className="Navbar">
             <span className="Logo">
-                VM logo
+                VM
             </span>
             <div className="Nav-options">
                 <span>
-                    <a className="Item" href="">Home</a>  
+                    <a className="Item" href="">About</a>  
                 </span>
                 <span>
-                    <a className="Item" href="">Skills</a>
+                    <a className="Item item-border" href="">Skills</a>
                 </span>
                 <span>
                     <a className="Item" href="">Projects</a>

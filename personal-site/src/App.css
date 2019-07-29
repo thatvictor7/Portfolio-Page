@@ -2,7 +2,7 @@ Body {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 2em;
   width: 100%;
-  background-color: rgb(0, 34, 95);
+  /* background-color: rgb(0, 34, 95); */
   /* background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
   background-size: 43em;
   background-repeat: repeat-y;
@@ -12,7 +12,8 @@ Body {
 }
 .parallax {
   /* The image used */
-  background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg");
+  /* background-image: url("http://hdqwalls.com/wallpapers/shanghai-city-hd-illustration-tu.jpg"); */
+  background-image: url("./components/assets/main-background.jpg");
 
   /* Set a specific height */
   height: 800px;
@@ -25,7 +26,7 @@ Body {
 }
 
 .Navbar {
-  background-color: rgba(68, 68, 68, 0);
+  background-color: rgba(68, 68, 68, 0.338);
   height: 65px;
   color: black;
   padding-right: 5%;
@@ -54,16 +55,25 @@ Body {
   border-radius: 10%;
 }
 
+/* .item-border {
+  border-right: 1px solid white;
+} */
+
 .Item:hover {
   color: rgb(255, 255, 255);
   
   text-decoration: none;
-  background-color: rgba(248, 248, 248, 0.329);
+  background-color: rgba(9, 208, 230, 0.913);
 }
 
 .Logo {
-  padding-left: 1%;
+  /* padding-left: 1%; */
   color: white;
+  border: 7px solid white;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  /* text-align: center; */
 }
 
 .container {
@@ -77,7 +87,7 @@ Body {
 .image-side {
   display: flex;
   height: 500px;
-  background-color: blue;
+  /* background-color: blue; */
   width: 100%;
   /* margin-right: -13%; */
   align-items: center;
@@ -92,7 +102,7 @@ Body {
 }
 
 .carousel-container {
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -105,7 +115,7 @@ Body {
 }
 
 .test {
-  background-color: rgba(1, 1, 1, 0.089);
+  /* background-color: rgba(253, 206, 206, 0.089); */
   width: 100vw;
 }
 
@@ -116,7 +126,7 @@ Body {
 .profile-image {
   width: 30%;
   margin: 2% 2% 2% 4%;
-  background: rgba(1, 1, 1, 0.336);
+  /* background: rgba(1, 1, 1, 0.336); */
 }
 
 .name {
@@ -131,7 +141,38 @@ Body {
 .about-container {
   position: relative;
   height: 100%;
-  background: rgba(1, 1, 1, 0.336);
+  /* background: rgba(1, 1, 1, 0.336); */
+}
+
+.name-title {
+  color: white;
+  font-size: 5vw;
+  position: absolute;
+  left: 33%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.1)
+}
+
+.main-name{
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.logo-main{
+  border: 7px solid white;
+  align-self: center;
+  padding: 0 3% 0 3%;
+  font-weight: 900;
+  margin-bottom: 1px;
+}
+
+.social-media{
+  position: absolute;
+  left: 10%;
+  top: 80%;
 }
 
 

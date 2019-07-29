@@ -11,6 +11,7 @@ import React from 'react';
 //   Collapse
 // } from "shards-react";
 import Navbar from './components/Navbar.jsx'
+import Main from './components/Main.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
@@ -27,7 +28,7 @@ class App extends React.Component {
     <div className="page">
       <div className="parallax">
         <Navbar></Navbar>
-        
+        <Main></Main>
       </div>
       {/* <div className="overlay"></div> */}
       <About></About>
