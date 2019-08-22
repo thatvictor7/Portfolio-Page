@@ -1,20 +1,10 @@
 import React from 'react';
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "shards-ui/dist/css/shards.min.css"
-// import {
-//   // Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   NavLink,
-//   Collapse
-// } from "shards-react";
 import Navbar from './components/Navbar.jsx'
 import Main from './components/Main.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
+import BottomNavbar from './components/BottomNavbar.jsx'
 import './App.css'
 
 
@@ -30,11 +20,10 @@ class App extends React.Component {
         <Navbar></Navbar>
         <Main></Main>
       </div>
-      {/* <div className="overlay"></div> */}
       <About></About>
-      <Skills></Skills>
+      {/* <Skills></Skills> */}
       <Projects></Projects>
-      {/* <div className="test"></div> */}
+      <BottomNavbar></BottomNavbar>
     </div>
   );
   }

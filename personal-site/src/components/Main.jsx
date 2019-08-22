@@ -2,7 +2,7 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown, } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleDown,faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 function Main(){
     return(
@@ -10,15 +10,15 @@ function Main(){
             <div className="name-title">
                 <div className="logo-main">VM</div>
                 <div className="main-name">Victor Montoya</div>
-                <div>Software Developer</div>
+                <div className="job-title">Software Developer</div>
             </div>
             <div className="social-media">
-                <span>
-                    <a href="https://github.com/thatvictor7"> 
-                        <FontAwesomeIcon color="white" icon={faGithub} />
+                <span className="social-icons">
+                    <a  href="https://github.com/thatvictor7"> 
+                        <FontAwesomeIcon  color="white" icon={faGithub} />
                     </a>
                 </span>
-                <span>
+                <span className="social-icons">
                     <a href="https://www.linkedin.com/in/victor-montoya/">
                         <FontAwesomeIcon color="white" icon={faLinkedin} />
                     </a>
@@ -26,8 +26,7 @@ function Main(){
             </div>
             <div className="down-arrow-container">
                 <div>Learn More</div>
-                <FontAwesomeIcon className="" color="white" size="2x" icon={faAngleDoubleDown} />
-                {/* <Image className="down-arrow" src={require("./assets/arrow_down_white.png")} /> */}
+                <FontAwesomeIcon className="bounce-6 box" color="white" size="2x" icon={faAngleDown} />
             </div>
         </div>
     )
